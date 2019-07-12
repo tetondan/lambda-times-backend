@@ -4,7 +4,9 @@ const server = express();
 
 server.use(cors());
 
-server.listen(8080, () => {
+const port = process.env.PORT || 8080;
+
+server.listen(port, () => {
   console.log('Server running on port 8080');
 });
 
